@@ -39,7 +39,9 @@ Project Overview This project implements CUDA-based parallel programming for ima
   - Ensure nvcc compiler is added to the system PATH.
 
 To verify:
-```nvcc --version```
+```
+nvcc --version
+```
 This should print CUDA version information.
 
 2. Install NVIDIA Drivers
@@ -93,6 +95,8 @@ nvcc -o image_processing.exe main.cu convolution.cu morphology.cu utils.cu ^
 
 Step 3: Run the Executable
 
-```image_processing.exe input_image.jpg output_image.jpg```
+```
+image_processing.exe input_image.jpg output_image.jpg
+```
 
 Step 4: Verify Output Check output_image.jpg to see the processed result.
