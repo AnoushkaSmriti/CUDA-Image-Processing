@@ -39,8 +39,7 @@ Project Overview This project implements CUDA-based parallel programming for ima
   - Ensure nvcc compiler is added to the system PATH.
 
 >  To verify:
-```bash
-nvcc --version
+`nvcc --version`
 This should print CUDA version information.
 
 ### 2. Install NVIDIA Drivers
@@ -68,21 +67,18 @@ i. Install vcpkg (if not already installed)
 
 ii. Install OpenCV using vcpkg:
 
-```bash
- vcpkg install opencv[core,imgproc,highgui]:x64-windows
+`vcpkg install opencv[core,imgproc,highgui]:x64-windows`
 
 iii. Run:
 
-```bash
- vcpkg integrate install
+ `vcpkg integrate install`
 
 
 Compilation and Execution
 
 Step 1: Navigate to the Project Directory
 
-```bash
-C:\Users\Reliance Digital\Documents\Parallel Programming\CUDA_project
+`cd C:\Users\Reliance Digital\Documents\Parallel Programming\CUDA_project`
 
 Step 2: Compile with nvcc Run the following command to compile the project:
 
@@ -96,7 +92,6 @@ nvcc -o image_processing.exe main.cu convolution.cu morphology.cu utils.cu ^
 
 Step 3: Run the Executable
 
-```bash
-image_processing.exe input_image.jpg output_image.jpg
+`image_processing.exe input_image.jpg output_image.jpg`
 
 Step 4: Verify Output Check output_image.jpg to see the processed result.
