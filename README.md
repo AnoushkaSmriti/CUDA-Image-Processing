@@ -31,24 +31,24 @@ Project Overview This project implements CUDA-based parallel programming for ima
 
 ##  Setup Instructions
 
-### 1️. Install CUDA Toolkit
+1️. Install CUDA Toolkit
 
 - Download the CUDA Toolkit from NVIDIA's official site: [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit)
 - During installation:
   - Enable Visual Studio Integration.
   - Ensure nvcc compiler is added to the system PATH.
 
->  To verify:
-`nvcc --version`
+To verify:
+```nvcc --version
 This should print CUDA version information.
 
-### 2. Install NVIDIA Drivers
+2. Install NVIDIA Drivers
 
  i. Ensure you have the latest NVIDIA GPU drivers from NVIDIA's driver page.
 ii. Restart your computer after installation.
 
 
-### 3. Install OpenCV for C++ Method 1: Using Prebuilt Binaries (Recommended) 1. Download OpenCV from OpenCV's official site. 2. Extract it to a location (e.g., C:\opencv). 3. Set the environment variables:
+3. Install OpenCV for C++ Method 1: Using Prebuilt Binaries (Recommended) 1. Download OpenCV from OpenCV's official site. 2. Extract it to a location (e.g., C:\opencv). 3. Set the environment variables:
 
  	o	Include Path: C:\opencv\build\include
 
