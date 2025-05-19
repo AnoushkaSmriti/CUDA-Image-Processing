@@ -3,14 +3,17 @@ Project Overview This project implements CUDA-based parallel programming for ima
 
 System Requirements To run this project, ensure your system meets the following requirements:
 
-Hardware Requirements: • GPU: NVIDIA GPU with CUDA Compute Capability 5.0 or higher
+
+Hardware Requirements: 
+
+• GPU: NVIDIA GPU with CUDA Compute Capability 5.0 or higher
 
 • RAM: Minimum 8GB (16GB recommended)
 
 • Storage: At least 2GB of free disk space
 
-Software Requirements:
 
+Software Requirements:
 • Operating System: Windows 10/11 (64-bit)
 
 • CUDA Toolkit: Version 11.0 or later
@@ -20,6 +23,7 @@ Software Requirements:
 • OpenCV: Version 4.5 or later (C++ version, not just Python bindings)
 
 • Visual Studio: Version 2019/2022 (Community or Professional Edition)
+
 
 Installation Steps
 
@@ -79,4 +83,5 @@ nvcc -o image_processing.exe main.cu convolution.cu morphology.cu utils.cu ^
 Step 3: Run the Executable
 
 image_processing.exe input_image.jpg output_image.jpg
+
 Step 4: Verify Output Check output_image.jpg to see the processed result.
