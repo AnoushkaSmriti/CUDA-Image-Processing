@@ -39,7 +39,7 @@ Project Overview This project implements CUDA-based parallel programming for ima
   - Ensure nvcc compiler is added to the system PATH.
 
 To verify:
-```nvcc --version
+```nvcc --version```
 This should print CUDA version information.
 
 2. Install NVIDIA Drivers
@@ -49,49 +49,50 @@ ii. Restart your computer after installation.
 
 
 3. Install OpenCV for C++ Method 1: Using Prebuilt Binaries (Recommended) 1. Download OpenCV from OpenCV's official site. 2. Extract it to a location (e.g., C:\opencv). 3. Set the environment variables:
-
+```
  	o	Include Path: C:\opencv\build\include
 
  	o	Library Path: C:\opencv\build\x64\vc16\lib
 
  	o	Binary Path: C:\opencv\build\x64\vc16\bin (add this to PATH)
-
+```
 Method 2: Using vcpkg
 
 i. Install vcpkg (if not already installed)
 
-```bash
+```
  git clone https://github.com/microsoft/vcpkg.git
  cd vcpkg
  bootstrap-vcpkg.bat
-
+```
 ii. Install OpenCV using vcpkg:
-
-`vcpkg install opencv[core,imgproc,highgui]:x64-windows`
+```
+vcpkg install opencv[core,imgproc,highgui]:x64-windows
+```
 
 iii. Run:
-
- `vcpkg integrate install`
-
+```
+ vcpkg integrate install
+```
 
 Compilation and Execution
 
 Step 1: Navigate to the Project Directory
 
-`cd C:\Users\Reliance Digital\Documents\Parallel Programming\CUDA_project`
+```cd C:\Users\Reliance Digital\Documents\Parallel Programming\CUDA_project```
 
 Step 2: Compile with nvcc Run the following command to compile the project:
 
-```bash
+```
 nvcc -o image_processing.exe main.cu convolution.cu morphology.cu utils.cu ^
 -I"C:\opencv\build\include" ^
 -L"C:\opencv\build\x64\vc16\lib" ^
 -lopencv_world480
-
+```
 (Note: Replace opencv_world480 with your actual OpenCV version.)
 
 Step 3: Run the Executable
 
-`image_processing.exe input_image.jpg output_image.jpg`
+```image_processing.exe input_image.jpg output_image.jpg```
 
 Step 4: Verify Output Check output_image.jpg to see the processed result.
